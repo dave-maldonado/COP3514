@@ -1,7 +1,0 @@
-P=hw1_var_swap2
-OBJECTS=
-CFLAGS= -g -Wall -O3
-LDLIBS=
-CC=c99
-
-$(P): $(OBJECTS)

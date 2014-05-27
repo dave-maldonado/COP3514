@@ -1,0 +1,6 @@
+Makefile
+bin/
+*.dSYM/
+*.dSYM/*
+*~
+*.tex
