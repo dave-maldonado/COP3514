@@ -2,10 +2,11 @@
 #include <stdbool.h>
 
 bool isTriangle(int a, int b, int c) {
-    if((a < (c + b)) && (a > (c - b) )) { return true; }
+    if((a < (c + b)) && (a > (c - b))) { return true; }
     else { return false; }
 }
 
+// determine if triangle is valid given sides
 int main() {
     int a, b, c; //side lengths
 
