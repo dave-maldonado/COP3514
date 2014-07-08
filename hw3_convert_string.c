@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <string.h>
-#include <limits.h>
+#define LINE_LEN 1024
 
 // returns integer given string representation
 int strtoint(char str[]) {
@@ -20,11 +20,11 @@ int strtoint(char str[]) {
 // NOT safe from overflow!
 int main() {
     const int N_CONVERSIONS = 4;
-    char buffer[LINE_MAX];
+    char buffer[LINE_LEN];
     int sum = 0;
 
     for(int i = 0; i < N_CONVERSIONS; i++) {
-	fgets(buffer, LINE_MAX, stdin);
+	fgets(buffer, LINE_LEN, stdin);
 	buffer[strlen(buffer) - 1] = '\0';
 	sum += strtoint(buffer);
     }
