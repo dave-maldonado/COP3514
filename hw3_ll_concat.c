@@ -20,7 +20,7 @@ void append(node_t* node, list_t list) {
     a->next = node;
 }
 
-void cocatenate(list_t first, list_t second) {
+void concatenate(list_t first, list_t second) {
     append(second.head, first);
     second.head = first.head;
 }
@@ -34,7 +34,7 @@ void printCharList(list_t list) {
     printf("%c", current->value);
 }
 
-// test program that cocatenates two char lists
+// test program that concatenates two char lists
 int main() {
     node_t a = {'y', NULL};
     node_t b = {'o', NULL};
@@ -50,7 +50,7 @@ int main() {
     append(&e, list2);
     append(&f, list2);
 
-    cocatenate(list1, list2);
+    concatenate(list1, list2);
     printCharList(list1);
     printf("\n");
 
