@@ -24,14 +24,14 @@ void append(node_t* node, list_t list) {
 
 list_t reverse(list_t list) {
     node_t* current = list.head;
-    node_t* previous = NULL;
+    node_t* previous = 0;
     while(current) {
-	node_t* next = current->next;
-	current->next = previous;
-	previous = current;
-	current = next;
+    	node_t* next = current->next;
+    	current->next = previous;
+    	previous = current;
+    	current = next;
     }
-    list.head = current;
+    list.head = previous;
     return list;
 }
 
